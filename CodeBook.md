@@ -7,7 +7,7 @@ The script run_analysis.R performs the 5 steps described in the course project's
 - Only those columns with the mean and standard deviation measures are taken from the whole dataset. After extracting these columns, they are given the correct names, taken from features.txt.
 - As activity data is addressed with values 1:6, we take the activity names and IDs from activity_labels.txt and they are substituted in the dataset.
 - For whole dataset, those columns with vague column names are corrected.
-- Finally, generate a new dataset with all the average measures for each subject and activity type. 
+- Finally, generate a new dataset with all the average measures for each subject and activity type. (30 subjects * 6 activities = 180 rows)
 
 # Variables Information 
 
@@ -16,13 +16,13 @@ Section 1. Merge the training and the test sets to create one data set.
 After setting the source directory for the files, read into tables the data located in
 
 features.txt
-activity_labels.txt
-subject_train.txt
-x_train.txt
-y_train.txt
-subject_test.txt
-x_test.txt
-y_test.txt
+,activity_labels.txt
+,subject_train.txt
+,x_train.txt
+,y_train.txt
+,subject_test.txt
+,x_test.txt
+,y_test.txt. 
 Assign column names and merge to create one data set.
 
 Section 2. Extract only the measurements on the mean and standard deviation for each measurement.
